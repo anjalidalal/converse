@@ -1,0 +1,1 @@
+const belgium = document.getElementById

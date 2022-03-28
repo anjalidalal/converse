@@ -1,0 +1,115 @@
+/* font-family: proxima nova,proxima-nova,Helvetica,Arial,sans-serif; */
+/* h1 font family */
+
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: proxima nova, proxima-nova, Helvetica, Arial, sans-serif;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  min-width: 320px;
+  font-size: 0.875rem;
+}
+.header {
+  background-color: #fff;
+  color: #000;
+  padding: 15px 5px;
+}
+.converse {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: proxima nova, proxima-nova, Helvetica, Arial, sans-serif;
+  margin-top: 2px;
+}
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.arrow {
+  width: 18px;
+  height: 18px;
+  margin-left: -10%;
+}
+.star {
+  width: 12px;
+  height: 12px;
+  margin-right: -10%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.para {
+  font-family: proxima nova, proxima-nova, Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: 600;
+  margin: 30px 0px;
+}
+.country-container{
+  padding: 20px 10px 50px 10px;
+}
+.heading {
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: inherit;
+  -webkit-text-stroke-width: 0.0625rem;
+  word-spacing: 100vw;
+  line-height: 1;
+  font-size: 2.25rem;
+  margin: 15px 0px;
+  text-transform: uppercase;
+}
+.country {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+li{
+  margin-top: 0.8rem;
+}
+ul {
+  list-style-type: none;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .para {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 40px 0px;
+  }
+  .country-container{
+    padding: 30px 10px 90px 10px;
+  }
+  .heading {
+    line-height: 1;
+    font-size: 2.45rem;
+    margin: 25px 0px;
+  }
+  .country {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .europe{
+    margin-top: 35px;
+    flex-basis: 83.33333%;
+    max-width: 33.33333%;
+  }
+  li{
+      line-height: 1.31;
+      font-size: 20px;
+  }
+}

@@ -176,8 +176,9 @@ button {
   display: flex;
   overflow: auto;
 }
-.s{
+.s {
   margin-bottom: 20px;
+  background-color: #35353500;
 }
 .s,
 .s > img {
@@ -186,12 +187,56 @@ button {
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
   margin-left: 10px;
-  
 }
-.s > p{
+.s > p {
   margin: 10px;
   color: #353535;
 }
+
+.redboot {
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+}
+.article {
+  width: 100%;
+}
+.laptop-img {
+  display: none;
+}
+.mobile-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+#btn {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.redboot-content {
+  text-align: center;
+  padding: 20px;
+}
+.text {
+  font-weight: 700;
+  font-size: 34px;
+}
+.redboot-content > p {
+  margin: 15px 0px;
+  font-size: 24px;
+  line-height: 1.57;
+  font-size: 1.125rem;
+}
+
+
+
+
 
 @media (min-width: 768px) {
   .para {
@@ -237,7 +282,7 @@ button {
   }
   .content {
     position: absolute;
-    top: 180px;
+    top: 198px;
     bottom: 0px;
     padding: 0px 80px;
     text-align: center;
@@ -308,11 +353,77 @@ button {
   .search1 {
     display: none;
   }
+  .s {
+    position: relative;
+  }
+  /* .s:hover {
+    background-color: #35353586;
+  }
+  .image:hover{
+    opacity: 0.6;
+  } */
   .s,
-.s > img {
-  flex-basis: 24.66667%;
-  max-width: 105.66667%;
-  flex-shrink: 0;
-  margin-left: 0%;
+  .s > img {
+    flex-basis: 25%;
+    max-width: 100.1%;
+
+    margin: 0%;
+    object-fit: cover;
+  }
+  .ptag {
+    padding-top: 60px;
+    font-size: 32px;
+  }
+  .s > p {
+    position: absolute;
+    bottom: 14px;
+    margin: 10px 25px;
+  }
+
+  /* redboot section */
+  .mobile-img{
+    display: none;
+  }
+  .laptop-img,
+  .article{
+    display: unset;
+    width: 100%;
+    height: 380px;
+  }
+  .redboot {
+    position: relative;
+    color: #fff;
+    margin: 0%;
+  }
+  .redboot-content {
+  padding:   -1px 20px 4px 260px;
+  margin-left: 70px;
+  text-align: right;
+  position: absolute;
+  top: 47px;
+  left: 213px;
+}
+.text {
+  font-weight: 700;
+  font-size: 34px;
+}
+.redboot-content > p {
+  margin: 15px 0px 15px 150px;
+  font-size: 24px;
+  line-height: 1.57;
+  font-size: 1.125rem;
+}
+#btn {
+  background-color: #fff;
+  border-color: #000;
+  color: #000;
+  text-align: center;
+  width: 200px;
+  padding: 20px;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.b{
+  margin-left: 30px;
 }
 }

@@ -13,6 +13,14 @@ body {
   min-width: 320px;
   font-size: 0.875rem;
 }
+button{
+  cursor: pointer;
+}
+button:hover{
+  background-color: #fff;
+  color: #000;
+  border: #000;
+}
 .header1,
 .header2 {
   background-color: #fff;
@@ -625,6 +633,26 @@ button {
   .detail3 > button{
     background-color: #fff;
     color: #000;
+    padding: 10px;
+    width: 170px;
+    margin: 0%;
+  }
+  /* cart four */
+  .cart4{
+    position: relative;
+  }
+  .detail4{
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 33.3333%;
+    text-align: left;
+    padding: 0px 20px;
+  }
+  .detail4 > h1{
+    font-size: 30px;
+  }
+  .detail4 > button{
     padding: 10px;
     width: 170px;
     margin: 0%;

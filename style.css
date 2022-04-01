@@ -460,7 +460,109 @@ button {
 .detail7 > button {
   margin: 20px 0px 10px 0px;
 }
+/* cart eight */
+.cart8 {
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  background: #e5e5e5;
+  display: block;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.footer-top {
+  min-height: 100px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 20px 0px 20px;
+  color: #000;
+}
+.description{
+  text-align: center;
+}
+.description > div{
+  font-weight: 400;
+    font-size: 2em;
+    margin: 10px 0px;
+}
+.description > p{
+  line-height: 1.66667em;
+    font-size: 1.1em
+}
+#email,
+#dob{
+  width: 100%;
+  appearance: none;
+  border-radius: 0;
+  outline: none;
+  height: 2.125rem;
+    border: none;
+    border-bottom: 0.0625rem solid #9b9b9b;
+    color: currentColor;
+    background-color: rgba(255, 255, 255, 0);
+}
+select{
+  height: 2.125rem;
+    border: none;
+    border-bottom: 0.0625rem solid #9b9b9b;
+    width: 60%;
+    outline: none;
+    background-color: transparent;
+}
+option{
+  color: #000;
+  font-size: 12px;
+}
+.join-now > button{
+  background-color: #000;
+    border-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 15px;
+}
+.gender-joinbtn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-signup > div{
+  margin: 20px 0px;
+}
+.social-media{
+  margin: 50px 0px;
+  padding: 0px 26%;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
 
+.gap{
+  width: 2px;
+  height: 30px;
+  background-color: #000;
+}
+.footer-button{
+  line-height: 3.58333em;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #cacaca;
+  text-align: center;
+  margin: 0px 20px 20px 20px;
+}
+.more{
+  border: none;
+  height: 100%;
+  -webkit-appearance: menulist-button;
+   font-size: 22px;
+  border-radius: 0;
+    outline: none;
+    color: #fff;
+    overflow: hidden;
+}
 @media (min-width: 768px) {
   .para {
     font-size: 20px;
@@ -662,7 +764,7 @@ button {
   .l-img1,
   .l-img4,
   .l-img3,
-  .l-img7{
+  .l-img7 {
     display: unset;
     width: 100%;
   }
@@ -816,66 +918,66 @@ button {
     margin-bottom: 27px;
   }
   /* cart six */
-  .cart6{
+  .cart6 {
     background-color: #fff;
     width: 100%;
     display: flex;
     height: 105vh;
     padding: 0;
   }
-  .l-img6{
+  .l-img6 {
     width: 100%;
     display: flex;
   }
-  .upper2{
+  .upper2 {
     width: 50%;
   }
-  .upper2 > img{
+  .upper2 > img {
     width: 100%;
     height: 105vh;
   }
   .lower2,
-  .lower2 > img{
+  .lower2 > img {
     width: 50%;
   }
-  .up-img > img{
+  .up-img > img {
     width: 100%;
     height: 50vh;
   }
-  .up-img{
+  .up-img {
     margin: 0%;
     padding: 0;
     width: 100%;
     height: 50vh;
   }
-  .low-img{
+  .low-img {
     margin: 0%;
     padding: 0;
     width: 100%;
     height: 55vh;
     display: flex;
   }
-  .low-img > img{
+  .low-img > img {
     width: 50%;
     height: 55vh;
   }
   /* cart seven */
-  .cart7{
+  .cart7 {
     position: relative;
   }
-  .l-img7 > img, 
-  .l-img7{
+  .l-img7 > img,
+  .l-img7 {
     height: 90vh;
     width: 100%;
   }
-  .detail7{
+  .detail7 {
     position: absolute;
     top: 345px;
     left: -30px;
     padding: 0px 50px;
     margin: 0px 100px;
   }
-  .detail7 > button{
+  .detail7 > button {
     width: 250px;
     margin: 0%;
   }

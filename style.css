@@ -23,12 +23,12 @@ body {
 }
 .policy {
   padding: 10px;
-  margin: auto;
   display: flex;
   align-items: center;
   text-align: center;
-  font-size: 20px;
+  font-size: 14px;
   overflow: hidden;
+  text-decoration: underline;
 }
 button {
   cursor: pointer;
@@ -39,10 +39,11 @@ button:hover {
   border: #000;
 }
 .header1,
-.header2 {
+.header2,
+.shoes-data-header {
   background-color: #fff;
   color: #000;
-  /* padding: 15px 5px; */
+  border: 1px solid rgba(0, 0, 0, 0.089);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,7 +110,8 @@ ul {
 }
 /* belgium page
 nabar */
-.banner {
+.banner,
+.shoes-data-banner {
   background: #f4f4f4;
   color: #000;
   min-height: 3.125rem;
@@ -130,7 +132,8 @@ nabar */
   height: 23px;
 }
 .header2,
-.header1 {
+.header1,
+.shoes-data-header {
   padding: 10px;
   width: 100%;
 }
@@ -479,60 +482,63 @@ button {
   padding: 20px 20px 0px 20px;
   color: #000;
 }
-.description{
+.footer-down {
+  display: none;
+}
+.description {
   text-align: center;
 }
-.description > div{
+.description > div {
   font-weight: 400;
-    font-size: 2em;
-    margin: 10px 0px;
+  font-size: 2em;
+  margin: 10px 0px;
 }
-.description > p{
+.description > p {
   line-height: 1.66667em;
-    font-size: 1.1em
+  font-size: 1.1em;
 }
 #email,
-#dob{
+#dob {
   width: 100%;
   appearance: none;
   border-radius: 0;
   outline: none;
   height: 2.125rem;
-    border: none;
-    border-bottom: 0.0625rem solid #9b9b9b;
-    color: currentColor;
-    background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 0.0625rem solid #9b9b9b;
+  color: currentColor;
+  background-color: rgba(255, 255, 255, 0);
 }
-select{
+select {
   height: 2.125rem;
-    border: none;
-    border-bottom: 0.0625rem solid #9b9b9b;
-    width: 60%;
-    outline: none;
-    background-color: transparent;
+  border: none;
+  border-bottom: 0.0625rem solid #9b9b9b;
+  width: 60%;
+  outline: none;
+  background-color: transparent;
 }
-option{
+option {
   color: #000;
   font-size: 12px;
 }
-.join-now > button{
+.join-now > button {
   background-color: #000;
-    border-color: #000;
-    color: #fff;
-    padding: 10px 15px;
-    font-weight: 600;
-    text-align: center;
-    font-size: 15px;
+  border-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 15px;
 }
-.gender-joinbtn{
+.gender-joinbtn {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.footer-signup > div{
+.footer-signup > div {
   margin: 20px 0px;
 }
-.social-media{
+.social-media {
   margin: 50px 0px;
   padding: 0px 26%;
   display: flex;
@@ -540,12 +546,12 @@ option{
   align-items: center;
 }
 
-.gap{
+.gap {
   width: 2px;
   height: 30px;
   background-color: #000;
 }
-.footer-button{
+.footer-button {
   line-height: 3.58333em;
   height: 55px;
   border-radius: 5px;
@@ -553,16 +559,106 @@ option{
   text-align: center;
   margin: 0px 20px 20px 20px;
 }
-.more{
+.more {
   border: none;
   height: 100%;
   -webkit-appearance: menulist-button;
-   font-size: 22px;
+  font-size: 22px;
   border-radius: 0;
-    outline: none;
-    color: #fff;
-    overflow: hidden;
+  outline: none;
+  color: #fff;
+  overflow: hidden;
 }
+.footer-flag{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 80px 20px;
+}
+#flag{
+  padding: 0px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#flag > img{
+  width: 18px;
+  height: 18px;
+}
+#line{
+  width: 1px;
+  height: 15px;
+  background-color: #9b9b9b;
+}
+#flag > p{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+.copyright{
+  color: #adadad;
+}
+.cart1,
+.cart2,
+.cart3,
+.cart4,
+.cart5,
+.cart6,
+.cart7,
+.shoes-article{
+  margin-top: -1%;
+}
+
+/* next page of shoes data */
+.main{
+  background-color: #fff;
+}
+.main-heading > p{
+  font-size: .875rem;
+  text-align: center;
+  color: #757575;
+  padding: 30px 0px 5px 0px;
+}
+.main-heading > h1{
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+  margin: 5px 0px;
+}
+.main-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px 40px 20px;
+}
+.main-button > button{
+  border-radius: 2rem;
+  border: 0.0625rem solid;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.main-button > p{
+  color: #757575;
+}
+.shoes-content{
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.shoes-content > h1{
+  color: #757575be;
+}
+.shoes-content > p{
+  font-size: 14px;
+  color: #b2b2b2;
+  line-height: 26px;
+  padding: 20px 30px;
+}
+
 @media (min-width: 768px) {
   .para {
     font-size: 20px;
@@ -596,6 +692,44 @@ option{
   .header2 {
     padding: 0px 0px 0px 10px;
   }
+  .offer{
+    display: flex;
+    gap: 90px;
+    align-items: center;
+  }
+  .banner {
+    display: flex;
+    align-items: center;
+  }
+  .flag{
+    padding: 0px 0px 0px 10px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .l-arrow,
+  .r-arrow{
+    display: unset;
+  }
+  .l-arrow > img, 
+  .r-arrow > img{
+    width: 20px;
+    height: 20px;
+  }
+  .flag > img{
+    width: 18px;
+    height: 18px;
+  }
+  .line{
+    width: 1px;
+    height: 15px;
+    background-color: #9b9b9b;
+  }
+  .flag > p{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+  }
   .carasol2 {
     display: unset;
     width: 100%;
@@ -604,7 +738,7 @@ option{
   .carasol2 > img {
     width: 100%;
     object-fit: cover;
-    margin: -1% 0%;
+    margin: 0% 0%;
   }
   .content {
     position: absolute;

@@ -18,11 +18,9 @@ belgium.addEventListener("click", displayBelDiv)
 // next apge of high tops shoes data 
 
 const highShoes = document.getElementById("high-shoes");
-const shoesDataDiv = document.querySelector(".shoes-data")
+const shoesDataDiv = document.querySelector(".shoes-data-page")
 
 function displayShoesData() {
-    header1.style.display = "none";
-    countryContainer.style.display = "none";
     belgiumDiv.style.display = "none";
 
     shoesDataDiv.style.display = "unset";
@@ -61,59 +59,109 @@ let shoesArray = [
         shade : "UNISEX HIGH TOP SHOE"
     },
     {
-        image : <img data-fallback="true" data-src="https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dwdfad1ec4/images/a_08/572720C_A_08X1.jpg?sw=406" src="https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dwdfad1ec4/images/a_08/572720C_A_08X1.jpg?sw=406" class="none-up product-tile__img product-tile__img--main ratio-media--fit ratio-media lazyloaded" alt="Chuck Taylor All Star Lift Platform Seasonal Color Light Silver/Black/White"></img>,
+        image : "https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dwdfad1ec4/images/a_08/572720C_A_08X1.jpg?sw=406",
         title : "Custom Chuck Taylor All",
         brand : "Start By You",
         price : "$ 9500",
         shade : "UNISEX HIGH TOP SHOE"
     },
     {
-        image : <img data-fallback="true" data-src="https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dw72df09bd/images/a_08/CTASCanHiSU22_blankcanvas_medial_08X1.jpg?sw=406" src="https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dw72df09bd/images/a_08/CTASCanHiSU22_blankcanvas_medial_08X1.jpg?sw=406" class="none-up product-tile__img product-tile__img--main ratio-media--fit ratio-media lazyloaded" alt="Custom Chuck Taylor All Star By You blankcanvas"></img>,
+        image : "https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dw72df09bd/images/a_08/CTASCanHiSU22_blankcanvas_medial_08X1.jpg?sw=406",
         title : "Custom Chuck 70",
         brand : "Canvas By You",
         price : "$ 110,00",
         shade : "UNISEX HIGH TOP SHOE"
     },
     {
-        image : <img data-fallback="true" data-src="https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dw8459ed14/images/a_08/CT70CanvasHiSU22_eldorado_medial_08X1.jpg?sw=406" src="https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dw8459ed14/images/a_08/CT70CanvasHiSU22_eldorado_medial_08X1.jpg?sw=406" class="none-up product-tile__img product-tile__img--main ratio-media--fit ratio-media lazyloaded" alt="Custom Chuck 70 Canvas By You eldorado"></img>,
+        image : "https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dw8459ed14/images/a_08/CT70CanvasHiSU22_eldorado_medial_08X1.jpg?sw=406",
         title : "Custom Chuck 70",
         brand : "Canvas By You",
         price : "$ 110,00",
         shade : "UNISEX HIGH TOP SHOE"
     },
     {
-        image : <img data-fallback="true" data-src="https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dw887a51a2/images/a_08/172863C_A_08X1.jpg?sw=406" src="https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dw887a51a2/images/a_08/172863C_A_08X1.jpg?sw=406" class="none-up product-tile__img product-tile__img--main ratio-media--fit ratio-media lazyloaded" alt="Chuck 70 Sunny Floral Egret/University Blue/Amarillo"></img>,
+        image : "https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dw887a51a2/images/a_08/172863C_A_08X1.jpg?sw=406",
         title : "Custom Chuck 70",
         brand : "Canvas By You",
         price : "$ 110,00",
         shade : "UNISEX HIGH TOP SHOE"
     },
     {
-        image : <img data-fallback="true" data-src="https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dw4610d56a/images/a_08/CTASCanHiSU22_mango_medial_08X1.jpg?sw=406" src="https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dw4610d56a/images/a_08/CTASCanHiSU22_mango_medial_08X1.jpg?sw=406" class="none-up product-tile__img product-tile__img--main ratio-media--fit ratio-media ls-is-cached lazyloaded" alt="Custom Chuck Taylor All Star By You mango"></img>,
+        image : "https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dw4610d56a/images/a_08/CTASCanHiSU22_mango_medial_08X1.jpg?sw=406",
         title : "Chuck 70 Sunny Floral",
         brand : "Canvas By You",
         price : "$ 9500",
         shade : "UNISEX HIGH TOP SHOE"
     },
     {
-        image : <img data-fallback="true" data-src="https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dwdfad1ec4/images/a_08/572720C_A_08X1.jpg?sw=406" src="https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dwdfad1ec4/images/a_08/572720C_A_08X1.jpg?sw=406" class="none-up product-tile__img product-tile__img--main ratio-media--fit ratio-media lazyloaded" alt="Chuck Taylor All Star Lift Platform Seasonal Color Light Silver/Black/White"></img>,
+        image : "https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dwdfad1ec4/images/a_08/572720C_A_08X1.jpg?sw=406",
         title : "Custom Chuck 70",
         brand : "Canvas By You",
         price : "$ 110,00",
         shade : "UNISEX HIGH TOP SHOE"
     },
     {
-        image : <img data-fallback="true" data-src="https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dwfab1a657/images/a_08/CT70CanvasHiSU22_khaki_medial_08X1.jpg?sw=406" src="https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dwfab1a657/images/a_08/CT70CanvasHiSU22_khaki_medial_08X1.jpg?sw=406" class="none-up product-tile__img product-tile__img--main ratio-media--fit ratio-media lazyloaded" alt="Custom Chuck 70 Canvas By You khaki"></img>,
+        image : "https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dwfab1a657/images/a_08/CT70CanvasHiSU22_khaki_medial_08X1.jpg?sw=406",
         title : "Custom Chuck 70",
         brand : "Canvas By You",
         price : "$ 110,00",
         shade : "UNISEX HIGH TOP SHOE"
     },
     {
-        image : <img data-fallback="true" data-src="https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dwbbefd508/images/j_08/172824C_J_08X1.jpg?sw=406" src="https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dwbbefd508/images/j_08/172824C_J_08X1.jpg?sw=406" class="none-up product-tile__img product-tile__img--main ratio-media--fit ratio-media lazyloaded" alt="Chuck 70 Sunny Floral Black/Washed Teal/Game Royal"></img>,
+        image : "https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dwbbefd508/images/j_08/172824C_J_08X1.jpg?sw=406",
         title : "Custom Run Star Hike",
         brand : "Canvas By You",
         price : "$ 110,00",
         shade : "UNISEX HIGH TOP SHOE"
     }
 ]
+
+
+localStorage.setItem("shoesData", JSON.stringify(shoesArray));
+
+let shoesData = localStorage.getItem("shoesData")
+
+shoesData = JSON.parse(shoesData)
+
+console.log(shoesData);
+
+function showShoes() {
+    let dataDiv = document.querySelector(".shoes-data")
+
+    shoesData.forEach(function (shoes) {
+        console.log(shoes.title);
+
+        let div = document.createElement("div");
+        div.setAttribute("class", "shoes-data-columns")
+
+
+        let image = document.createElement("img");
+        image.src = shoes.image;
+        image.setAttribute("class", "shoes-image")
+
+        let title = document.createElement("p");
+        title.innerText = shoes.title;
+        title.setAttribute("class", "shoes-p")
+
+
+        let brand = document.createElement("p");
+        brand.innerText = shoes.brand;
+        brand.setAttribute("class", "shoes-p")
+
+
+        let price = document.createElement("p");
+        price.innerText = shoes.price;
+        price.setAttribute("class", "shoes-p")
+
+
+        let shade = document.createElement("p");
+        shade.innerText = shoes.shade;
+        shade.setAttribute("class", "shoes-shade")
+
+
+        div.append(image, title, brand, price, shade);
+
+        dataDiv.append(div)
+    });
+}
+showShoes();

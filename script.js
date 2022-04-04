@@ -28,6 +28,7 @@ function displayBelgiumlDiv() {
 
     header1.style.display = "none";
     countryContainer.style.display = "none";
+    shoesDataDiv.style.display = "none";
     belgiumDiv.style.display = "unset";
 
 }

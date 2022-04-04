@@ -17,14 +17,15 @@ function showPage(pageName) {
             displayShoesData()
             break;
         default:
- 
+            showCountryPage()
             break;
     }
 }
 
 2
 function displayBelgiumlDiv() {
-    window.scroll(0, 0)
+    window.scroll(0, 0);
+
     header1.style.display = "none";
     countryContainer.style.display = "none";
     belgiumDiv.style.display = "unset";
@@ -32,13 +33,13 @@ function displayBelgiumlDiv() {
 }
 
 belgium.addEventListener("click", function() {
-    
+    window.scroll(0, 0);
+
     history.pushState({
         page: "belgium"
     }, "", "/belgium");
 
     displayBelgiumlDiv("belgium")
-    window.scroll(0, 0)
 
 })
 
@@ -54,14 +55,25 @@ function displayShoesData() {
 
 
 highShoes.addEventListener("click", function() {
+    window.scroll(0, 0);
 
     history.pushState({
         page: "shoesData"
     }, "", "/all-high-tops");
 
     displayShoesData("shoesData")
-    window.scroll(0, 0)
+
 });
+
+function showCountryPage() {
+    window.scroll(0, 0);
+
+    belgiumDiv.style.display = "none";
+    shoesDataDiv.style.display = "none";
+    header1.style.display = "flex";
+    countryContainer.style.display = "flex";
+    countryContainer.style.flexDirection = "column"
+}
 
 
 window.addEventListener("popstate", function (event) {
@@ -69,7 +81,7 @@ window.addEventListener("popstate", function (event) {
         showPage(event.state.page)
     }
     else{
-        
+        showCountryPage()
     }
 })
 

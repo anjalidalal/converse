@@ -10,6 +10,7 @@
 button{
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 .flag,
 .l-arrow,
@@ -19,13 +20,14 @@ button{
 .offer {
   margin: auto;
 }
-.policy {
+#policy {
   padding: 10px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   font-size: 14px;
   text-decoration: underline;
+  overflow: hidden;
 }
 
 .header1,
@@ -490,8 +492,6 @@ nabar */
 #email,
 #dob {
   width: 100%;
-  appearance: none;
-  border-radius: 0;
   outline: none;
   height: 2.125rem;
   border: none;
@@ -517,7 +517,6 @@ option {
   color: #fff;
   padding: 10px 15px;
   font-weight: 600;
-  text-align: center;
   font-size: 15px;
 }
 .gender-joinbtn {
@@ -552,7 +551,6 @@ option {
 .more {
   border: none;
   height: 100%;
-  -webkit-appearance: menulist-button;
   font-size: 22px;
   border-radius: 0;
   outline: none;
@@ -770,7 +768,7 @@ option {
     position: absolute;
     top: 198px;
     bottom: 0px;
-    padding: 0px 80px;
+    padding: 0;
     text-align: center;
     color: #fff;
     background-color: rgba(0, 0, 0, 0);
@@ -1023,7 +1021,7 @@ option {
   }
   .detail4 {
     position: absolute;
-    top: 109px;
+    top: 102px;
     left: 0px;
     width: 33.3333%;
     text-align: left;
@@ -1042,6 +1040,7 @@ option {
     display: flex;
     height: 63vh;
     background-color: #fff;
+    margin-bottom: 25px;
   }
   .box {
     width: 100%;

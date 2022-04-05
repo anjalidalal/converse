@@ -222,3 +222,23 @@ function showShoes() {
     });
 }
 showShoes();
+
+
+
+let policyDiv = document.getElementById("policy")
+
+
+let nextSlide = 1;
+let totalSlide = 4;
+
+setInterval(() => {
+    policyDiv.style.display = "block"
+    console.log(nextSlide);
+
+    if (nextSlide + 1 === totalSlide) {
+        nextSlide = 0;
+    }
+    else {
+        nextSlide++;
+    }
+}, 5000)

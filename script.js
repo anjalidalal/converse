@@ -225,7 +225,7 @@ showShoes();
 
 
 
-let policyDiv = document.getElementById("policy")
+let policyDiv = document.querySelector(".policy")
 
 
 let nextSlide = 1;

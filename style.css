@@ -30,7 +30,7 @@ body {
   width: 200px;
   height: 10vh;
 }
-#policy {
+.policy {
   margin: auto;
   width: 520px;
   height: 20px;
@@ -40,7 +40,7 @@ body {
   transform: translateX(0px);
   transition: transform 0.5s linear;
 }
-#policy > div {
+.policy > div {
   margin-top: 10px;
   width: 200px;
   padding: 10px;
@@ -780,10 +780,14 @@ option {
   }
   .content {
     position: absolute;
-    top: 198px;
+    top: 165px;
     bottom: 0px;
     padding: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     background-color: rgba(0, 0, 0, 0);
   }
@@ -1009,11 +1013,14 @@ option {
   .detail3 {
     color: #fff;
     position: absolute;
-    top: 90px;
+    top: 130px;
     left: 10px;
-    margin: 0px 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 0px 30px;
+    padding: 0px 160px;
   }
   .detail3 > h1 {
     font-size: 30px;

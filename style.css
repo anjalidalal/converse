@@ -671,11 +671,12 @@ option {
 .shoes-data {
   display: grid;
   grid-template-columns: auto auto;
-  justify-content: space-between;
   align-items: center;
+  grid-column: 0;
   padding: 10px;
   background-color: #fff;
   width: 100%;
+  margin: auto;
 }
 .shoes-data-columns {
   padding: 10px;
@@ -1142,15 +1143,19 @@ option {
   }
   .l-img7 > img,
   .l-img7 {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
   }
   .detail7 {
     position: absolute;
-    top: 345px;
-    left: -30px;
-    padding: 0px 50px;
-    margin: 0px 100px;
+    top: 448px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 136px;
+    padding: 0;
   }
   .detail7 > button {
     width: 250px;
@@ -1238,10 +1243,19 @@ option {
   .shoes-data {
     display: grid;
     grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 10px;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     background-color: #fff;
     width: 100%;
+  }
+  .shoes-data-parent-div{
+    width: 70%;
+    margin: auto;
+  }
+  .shoes-content{
+    margin: 50px 0px;
   }
 }

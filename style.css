@@ -7,7 +7,7 @@
   box-sizing: border-box;
   font-family: proxima nova, proxima-nova, Helvetica, Arial, sans-serif;
 }
-button{
+button {
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -20,14 +20,32 @@ button{
 .offer {
   margin: auto;
 }
-#policy {
-  padding: 10px;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  text-decoration: underline;
+body {
+  overflow-x: hidden;
+}
+.parent-policy {
+  margin: 0px 80px;
   overflow: hidden;
+  margin: auto;
+  width: 200px;
+  height: 10vh;
+}
+#policy {
+  margin: auto;
+  width: 520px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  transform: translateX(0px);
+  transition: transform 0.5s linear;
+}
+#policy > div {
+  margin-top: 10px;
+  width: 200px;
+  padding: 10px;
+  height: 20px;
+  text-decoration: underline;
 }
 
 .header1,
@@ -102,7 +120,7 @@ li {
 ul {
   list-style-type: none;
 }
-#belgium{
+#belgium {
   cursor: pointer;
 }
 /* belgium page
@@ -557,34 +575,34 @@ option {
   color: #fff;
   overflow: hidden;
 }
-.footer-flag{
+.footer-flag {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 20px 80px 20px;
 }
-#flag{
+#flag {
   padding: 0px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
-#flag > img{
+#flag > img {
   width: 18px;
   height: 18px;
 }
-#line{
+#line {
   width: 1px;
   height: 15px;
   background-color: #9b9b9b;
 }
-#flag > p{
+#flag > p {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   color: #000;
 }
-.copyright{
+.copyright {
   color: #adadad;
 }
 .cart1,
@@ -594,24 +612,24 @@ option {
 .cart5,
 .cart6,
 .cart7,
-.shoes-article{
+.shoes-article {
   margin-top: -1%;
 }
 
 /* next page of shoes data */
-.shoes-data-page{
+.shoes-data-page {
   display: none;
 }
-.main{
+.main {
   background-color: #fff;
 }
-.main-heading > p{
-  font-size: .875rem;
+.main-heading > p {
+  font-size: 0.875rem;
   text-align: center;
   color: #757575;
   padding: 30px 0px 5px 0px;
 }
-.main-heading > h1{
+.main-heading > h1 {
   font-size: 1.5rem;
   line-height: 1.5rem;
   font-weight: 600;
@@ -619,38 +637,38 @@ option {
   color: #000;
   margin: 5px 0px;
 }
-.main-button{
+.main-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 30px 20px 40px 20px;
 }
-.main-button > button{
+.main-button > button {
   border-radius: 2rem;
   border: 0.0625rem solid;
   padding: 10px 20px;
   cursor: pointer;
   font-weight: 600;
 }
-.main-button > p{
+.main-button > p {
   color: #757575;
 }
-.shoes-content{
+.shoes-content {
   background-color: #fff;
   text-align: center;
   padding: 20px;
 }
-.shoes-content > h1{
+.shoes-content > h1 {
   color: #757575be;
 }
-.shoes-content > p{
+.shoes-content > p {
   font-size: 14px;
   color: #b2b2b2;
   line-height: 26px;
   padding: 20px 30px;
 }
 
-.shoes-data{
+.shoes-data {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
@@ -659,29 +677,25 @@ option {
   background-color: #fff;
   width: 100%;
 }
-.shoes-data-columns{
+.shoes-data-columns {
   padding: 10px;
   /* background-color: #adadad; */
   width: 100%;
 }
-.shoes-image{
+.shoes-image {
   width: 100%;
   object-fit: cover;
 }
-.shoes-p{
+.shoes-p {
   color: #000;
   padding: 1px 0px;
 }
-.shoes-shade{
+.shoes-shade {
   color: #9b9b9b;
   text-transform: uppercase;
   font-size: 12px;
   margin-top: 3px;
 }
-
-
-
-
 
 @media (min-width: 768px) {
   .para {
@@ -716,7 +730,7 @@ option {
   .header2 {
     padding: 0px 0px 0px 10px;
   }
-  .offer{
+  .offer {
     display: flex;
     gap: 90px;
     align-items: center;
@@ -725,31 +739,31 @@ option {
     display: flex;
     align-items: center;
   }
-  .flag{
+  .flag {
     padding: 0px 0px 0px 10px;
     display: flex;
     align-items: center;
     gap: 7px;
   }
   .l-arrow,
-  .r-arrow{
+  .r-arrow {
     display: unset;
   }
-  .l-arrow > img, 
-  .r-arrow > img{
+  .l-arrow > img,
+  .r-arrow > img {
     width: 20px;
     height: 20px;
   }
-  .flag > img{
+  .flag > img {
     width: 18px;
     height: 18px;
   }
-  .line{
+  .line {
     width: 1px;
     height: 15px;
     background-color: #9b9b9b;
   }
-  .flag > p{
+  .flag > p {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -1135,12 +1149,12 @@ option {
     width: 250px;
     margin: 0%;
   }
-  .footer{
+  .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .footer-top{
+  .footer-top {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1156,28 +1170,28 @@ option {
     gap: 50px;
     color: #000;
   }
-  .footer-down > div > h1{
+  .footer-down > div > h1 {
     text-transform: uppercase;
     margin-bottom: 2em;
     font-weight: 400;
     font-size: 1.2em;
   }
   .about > ul > li,
-  .legal > ul > li, 
+  .legal > ul > li,
   .shopping > ul > li,
-  .nike > ul > li{
+  .nike > ul > li {
     font-size: 15px;
   }
-  .footer-flag{
+  .footer-flag {
     margin: 90px 0px 0px 0px;
     display: flex;
     align-items: center;
     gap: 18px;
   }
   #email,
-#dob {
-  width: 110%;
-}
+  #dob {
+    width: 110%;
+  }
   select {
     width: 60%;
     font-size: 17px;
@@ -1214,7 +1228,7 @@ option {
     color: #fff;
     overflow: hidden;
   }
-  .shoes-data{
+  .shoes-data {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-between;

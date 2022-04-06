@@ -229,10 +229,10 @@ let policyDiv = document.getElementById("policy")
 
 
 let nextSlide = 1;
-let totalSlide = 4;
+let totalSlide = 2;
 
 setInterval(() => {
-    policyDiv.style.display = "block"
+    policyDiv.style.transform = `translateX(-${(nextSlide) * 40}%)`;
     console.log(nextSlide);
 
     if (nextSlide + 1 === totalSlide) {
@@ -241,4 +241,4 @@ setInterval(() => {
     else {
         nextSlide++;
     }
-}, 5000)
+}, 4000)

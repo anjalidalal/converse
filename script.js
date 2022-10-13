@@ -1,4 +1,4 @@
-const belgium = document.getElementById("belgium");
+const belgiums = document.querySelectorAll(".bel");
 const belgiumDiv = document.querySelector(".belgium");
 const header1 = document.querySelector(".header1");
 const countryContainer = document.querySelector(".countryContainer");
@@ -28,19 +28,20 @@ function displayBelgiumlDiv() {
   shoesDataDiv.style.display = "none";
   belgiumDiv.style.display = "unset";
 }
+belgiums.forEach((belgium) => {
+  belgium.addEventListener("click", function () {
+    window.scroll(0, 0);
 
-belgium.addEventListener("click", function () {
-  window.scroll(0, 0);
+    history.pushState(
+      {
+        page: "belgium",
+      },
+      "",
+      "/belgium"
+    );
 
-  history.pushState(
-    {
-      page: "belgium",
-    },
-    "",
-    "/belgium"
-  );
-
-  displayBelgiumlDiv("belgium");
+    displayBelgiumlDiv("belgium");
+  });
 });
 
 function displayShoesData() {
